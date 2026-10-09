@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Martells Pizza</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #171512;
+            color: #fff;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        .hero {
+            position: relative;
+            display: flex;
+            min-height: min(760px, 100svh);
+            align-items: center;
+            overflow: hidden;
+            padding: clamp(2rem, 8vw, 7rem);
+            isolation: isolate;
+        }
+
+        .hero__image {
+            position: absolute;
+            z-index: -2;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 55%;
+        }
+
+        .hero::after {
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background: linear-gradient(90deg, rgb(15 13 11 / 82%) 0%, rgb(15 13 11 / 48%) 48%, rgb(15 13 11 / 8%) 100%);
+            content: "";
+        }
+
+        .hero__content {
+            width: min(100%, 680px);
+        }
+
+        .hero__eyebrow {
+            margin: 0 0 1.25rem;
+            color: #e5bd83;
+            font: 600 0.8rem/1.4 Arial, sans-serif;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: clamp(3.5rem, 9vw, 7.5rem);
+            font-weight: 400;
+            letter-spacing: -0.055em;
+            line-height: 0.95;
+        }
+
+        .hero__description {
+            max-width: 34rem;
+            margin: 1.5rem 0 0;
+            color: rgb(255 255 255 / 86%);
+            font: 1.05rem/1.7 Arial, sans-serif;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                min-height: 90svh;
+                padding: 2rem 1.5rem;
+            }
+
+            .hero::after {
+                background: linear-gradient(0deg, rgb(15 13 11 / 78%) 0%, rgb(15 13 11 / 38%) 75%, rgb(15 13 11 / 15%) 100%);
+            }
+        }
+        h2,
+h3 {
+    border-bottom: 1px solid rgb(255 255 255 / 35%);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <img
+                class="hero__image"
+                src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkaY7jpJx946m1hhS-ulm3ZSQKFMd0R7fcbW4JgWD4kMRN-ajr89yUrQDi9hPNy-zSk6ad2xs_mh-BILxqRvDalcui8q0pjxMqYr-55_QEDBFjPoGc8DxiYO7Z3MWQqkZRJJgG3raD36g=s1600"
+                alt="A view of Martells Pizza"
+                fetchpriority="high"
+            >
+            <div class="hero__content">
+                <p class="hero__eyebrow">Welcome to Martells Pizza</p>
+                <h1 id="hero-title">Great Pizza<br>Better Staff</h1>
+                <p class="hero__description">
+                    Come to Martells Pizza for the best pizza on the boardwalk.
+                </p>
+            </div>
+        </section>
+         <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#Whole Pies">Whole Pies</a></li>
+          <li><a href="#Slices">Slices</a></li>
+          <li><a href="#Drinks">Drinks</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section id="Whole Pies"></section>
+      <h1>Whole Pies</h1>
+      
+      <h2>Plain Pie - $42.00</h2>
+      <img src="plainpie.png" alt="Plain Pie">
+      <h2>White Pie - $44.00</h2>
+      <img src="whitepie.png" alt="White Pie">
+      <h2>Pepperoni Pie - $46.00</h2>
+      <img src="peppie.png" alt="Pepperoni Pie">
+      <h2>Sausage Pie - $46.00</h2>
+      <img src="saupie.png" alt="Sausage Pie">
+      <h2>Veggie Pie - $48.00</h2>
+      <img src="vepie.png" alt="Veggie Pie">
+      <h2>Meatlovers Pie - $48.00</h2>
+      <img src="loverpie.png" alt="Meatlovers Pie">
+      <h2>Chicken Parm Pie - $48.00</h2>
+      <img src="parmpie.png" alt="Chicken Parm Pie">
+      <h2>Buffalo Chicken Pie - $48.00</h2>
+      <img src="buffpie.png" alt="Buffalo Chicken Pie">
+      <h2>BBQ Chicken Pie - $48.00</h2>
+      <img src="bbqpie.png" alt="BBQ Chicken Pie">
+      <h2>Chicken Bacon Ranch Pie - $48.00</h2>
+      <img src="ranchpie.png" alt="Chicken Bacon Ranch Pie">
+      <h2>Hawaiian Pie - $48.00</h2>
+      <img src="hawpie.png" alt="Hawaiian Pie">
+      <br>
+      <a href="#top">Back to Top</a>
+      <section id="Slices"></section>
+      <h1>Slices</h1>
+      <h1>Please do note that only select slices are made each day.</h1>
+      <h2>Plain Slice - $6.50</h2>
+      <img src="PlainSlice.png" alt="Plain Slice">
+      <h2>White Slice - $6.75</h2>
+      <img src="White.png" alt="White Slice">
+      <h2>Pepperoni Slice - $6.75</h2>
+      <img src="Pep.png" alt="Pepperoni Slice">
+      <h2>Sausage Pepper/Onion Slice - $6.75</h2>
+      <img src="Spo.png" alt="Sausage Pepper/Onion Slice">
+      <h2>Chicken Parm Slice - $6.75</h2>
+      <img src="Parm.png" alt="Chicken Parm Slice">
+      <h2>Buffalo Chicken Slice - $6.75</h2>
+      <img src="Buff.png" alt="Buffalo Chicken Slice">
+      <h2>Chicken Bacon Ranch Slice - $6.75</h2>
+      <img src="Ranch.png" alt="Chicken Bacon Ranch Slice">
+      <h2>Hawaiian Slice - $6.75</h2>
+      <img src="Haw.png" alt="Hawaiian Slice">
+      <h2>Mushroom Slice - $6.75</h2>
+      <img src="Mush.png" alt="Mushroom Slice">
+      <br>
+      <a href="#top">Back to Top</a>
+      <section id="Drinks"></section>
+      <h1>Drinks</h1>
+      <h2>Pepsi Fountain Drinks</h2>
+      <h3>Small - $3.79</h3>
+      <h3>Large - $4.79</h3>
+      <h2>Packaged Drinks</h2>
+      <h3>Red Bull - $9.00</h3>
+      <h3>Red Bull Sugar Free - $9.00</h3>
+      <h3>Gatorade Red - $4.00</h3>
+      <h3>Gatorade Blue - $4.00</h3>
+      <h3>Gatorade Lemon Lime - $4.00</h3>
+      <h3>Gatorade Orange - $4.00</h3>
+      <h3>Gatorade Purple - $4.00</h3>
+      <h3>Apple Juice 10oz Bottle - $3.79</h3>
+      <h3>Water 20oz Bottle - $4.00</h3>
+      <h3>Milk - $3.00</h3>
+      <h2>Hot Beverages</h2>
+      <h3>Coffee - $2.49</h3>
+      <h3>Tea - $2.49</h3>
+      <h3>Hot Chocolate - $2.49</h3>
+      <a href="#top">Back to Top</a>
+      <section id="contact"></section>
+      <h1>Contact</h1>
+    </main>
+</body>
+</html>
